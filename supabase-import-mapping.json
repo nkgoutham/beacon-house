@@ -1,0 +1,56 @@
+{
+  "2025_rank": "rank",
+  "institution": "institution",
+  "country": "country",
+  "size": "size",
+  "SAT Score Range": {
+    "transform": {
+      "split": {
+        "separator": "|",
+        "columns": {
+          "EBRW": {
+            "range": {
+              "min": "sat_ebrw_min",
+              "max": "sat_ebrw_max"
+            }
+          },
+          "Math": {
+            "range": {
+              "min": "sat_math_min",
+              "max": "sat_math_max"
+            }
+          }
+        }
+      }
+    }
+  },
+  "ACT Range": {
+    "transform": {
+      "range": {
+        "min": "act_min",
+        "max": "act_max"
+      }
+    }
+  },
+  "GPA Range": {
+    "transform": {
+      "range": {
+        "min": "gpa_min",
+        "max": "gpa_max"
+      }
+    }
+  },
+  "Acceptance Rate (historical)": "acceptance_rate",
+  "Data Accuracy": "data_accuracy",
+  "Enrollment": {
+    "transform": {
+      "split": {
+        "separator": "|",
+        "columns": {
+          "Total": "enrollment_total",
+          "Int'l": "enrollment_international"
+        }
+      }
+    }
+  }
+}
